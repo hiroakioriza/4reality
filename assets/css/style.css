@@ -532,6 +532,7 @@ section {
 .section-title {
   text-align: center;
   padding-bottom: 50px;
+  padding-top: 40px;
 }
 
 .section-title h2 {
@@ -632,15 +633,16 @@ section {
 }
 
 .about .video-box {
-  background: url("../img/about.jpg") center center no-repeat;
+  background: url("../img/team.png") center center no-repeat;
   background-size: cover;
   min-height: 500px;
+  border-radius: 30px;
 }
 
 .about .play-btn {
   width: 94px;
   height: 94px;
-  background: radial-gradient(#428bca 50%, rgba(66, 139, 202, 0.4) 52%);
+  background: radial-gradient(#428bca );
   border-radius: 50%;
   display: block;
   position: absolute;
@@ -688,7 +690,7 @@ section {
 }
 
 .about .play-btn:hover::after {
-  border-left: 15px solid #428bca;
+  border-left: 15px solid ;
   transform: scale(20);
 }
 
@@ -840,7 +842,7 @@ section {
 # Cta
 --------------------------------------------------------------*/
 .cta {
-  background: linear-gradient(rgba(12, 13, 14, 0.8), rgba(12, 13, 14, 0.8)), url("../img/cta-bg.jpg") fixed center center;
+  background: linear-gradient(rgba(12, 13, 14, 0.8), rgba(12, 13, 14, 0.8)), url("../img/ScrollTeam.png") fixed center center;
   background-size: cover;
   padding: 120px 0;
 }
@@ -1057,11 +1059,18 @@ section {
 --------------------------------------------------------------*/
 .team .member {
   text-align: center;
-  margin-bottom: 20px;
-  background: #343a40;
+  margin-bottom: 50px;
+  margin-bottom: 15px;
   position: relative;
   overflow: hidden;
   border-radius: 4px;
+  transition: transform .2s;
+}
+
+.team .member:hover {
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1); 
 }
 
 .team .member .member-info {
@@ -1123,7 +1132,7 @@ section {
 }
 
 .team .member:hover .member-info {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.8) 20%, rgba(0, 212, 255, 0) 100%);
+  background: linear-gradient(0deg, rgba(40, 83, 120, 0.9) 0%, rgba(50, 90, 130, 0.8) 10%, rgba(0, 100, 255, 0) 50%);
   opacity: 1;
   transition: 0.4s;
 }
@@ -1137,6 +1146,29 @@ section {
   bottom: 0;
   transition: bottom ease-in-out 0.4s;
 }
+
+/*--------------------------------------------------------------
+# Team-ModalBox
+--------------------------------------------------------------*/
+.imgresp{
+  max-width: 100%;
+  max-height: auto;
+}
+
+.modal-header {
+  padding: 15px 16px;
+  background-color: #428bca;
+  color: white;
+}
+
+.modal-footer {
+  padding: 30px 16px;
+  background-color: #428bca;
+  color: white;
+}
+
+
+
 
 /*--------------------------------------------------------------
 # Contact
