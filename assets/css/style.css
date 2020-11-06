@@ -79,7 +79,6 @@ h1, h2, h3, h4, h5, h6 {
 .back-to-top {
   position: fixed;
   display: none;
-  right: 15px;
   z-index: 99999;
 }
 
@@ -100,6 +99,15 @@ h1, h2, h3, h4, h5, h6 {
   background: #5697d0;
   color: #fff;
 }
+
+/*--------------------------------------------------------------
+# Header Hidden
+--------------------------------------------------------------*/
+.Headhid {
+  display: none;
+  z-index: -99999;
+}
+
 
 /*--------------------------------------------------------------
 # Header
@@ -635,7 +643,7 @@ section {
   background: url("../img/team.png") center center no-repeat;
   background-size: cover;
   min-height: 500px;
-  border-radius: 30px;
+  border-radius: 10px;
 }
 
 .about .play-btn {
