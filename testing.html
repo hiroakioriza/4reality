@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Testing</title>
+</head>
+<style>
+  .modal-box {
+    width: 400px;
+    height: 200px;
+    position: relative;
+    background-color: #CCC;
+  }
+
+  .modal-box .page {
+    width: 100%;
+    height: 100%;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .block {
+    display: block;
+  }
+
+  .button-wrapper {
+    position: absolute;
+    color: #DDD;
+    top: 0;
+    right: -40px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .button-wrapper .button {
+    padding: 4px 8px;
+  }
+</style>
+<body>
+  <div class="modal-box">
+    <div class="page">A</div>
+    <div class="page hidden">B</div>
+    <div class="page hidden">C</div>
+    <div class="page hidden">D</div>
+    <div class="button-wrapper">
+      <button onclick="changePage('page', 0)" class="button">A</button>
+      <button onclick="changePage('page', 1)" class="button">B</button>
+      <button onclick="changePage('page', 2)" class="button">C</button>
+      <button onclick="changePage('page', 3)" class="button">D</button>
+    </div>
+  </div>
+
+  <div class="modal-box">
+    <div class="page-karen">A</div>
+    <div class="page-karen hidden">B</div>
+    <div class="page-karen hidden">C</div>
+    <div class="page-karen hidden">D</div>
+    <div class="button-wrapper">
+      <button onclick="changePage('page-karen', 0)" class="button">A</button>
+      <button onclick="changePage('page-karen', 1)" class="button">B</button>
+      <button onclick="changePage('page-karen', 2)" class="button">C</button>
+      <button onclick="changePage('page-karen', 3)" class="button">D</button>
+    </div>
+  </div>
+  
+  <script>
+    function changePage(className, page) {
+      const pages = document.getElementsByClassName(className);
+
+      for(let i = 0; i < pages.length; i++) {
+        pages[i].classList.add('hidden');
+      }
+
+      pages[page].classList.remove('hidden');
+    }
+  </script>
+</body>
+</html>
