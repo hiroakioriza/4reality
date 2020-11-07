@@ -35,22 +35,26 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
   right: 0;
   bottom: 0;
+  width: 100%;
+  height: 100%;
   z-index: 9999;
   overflow: hidden;
   background: #fff;
 }
 
-#preloader:before {
+
+
+#preloader .loading {
   content: "";
   position: fixed;
-  top: calc(50% - 30px);
-  left: calc(50% - 30px);
-  border: 6px solid #428bca;
+  top: calc(48% - 30px);
+  left: calc(47% - 30px);
+  /* border: 6px solid #428bca;
   border-top-color: #fff;
   border-bottom-color: #fff;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
+  border-radius: 50%; */
+  width: 100px;
+  height: 100px;
   -webkit-animation: animate-preloader 1s linear infinite;
   animation: animate-preloader 1s linear infinite;
 }
@@ -1158,7 +1162,7 @@ section {
 # Team-ModalBox
 --------------------------------------------------------------*/
 .imgresp{
-  max-width: 100%;
+  max-width: auto;
   max-height: auto;
 }
 
