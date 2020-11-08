@@ -47,8 +47,8 @@ h1, h2, h3, h4, h5, h6 {
 #preloader .loading {
   content: "";
   position: fixed;
-  top: calc(48% - 30px);
-  left: calc(47% - 30px);
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
   /* border: 6px solid #428bca;
   border-top-color: #fff;
   border-bottom-color: #fff;
