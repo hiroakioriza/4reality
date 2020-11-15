@@ -1432,9 +1432,22 @@ section {
   font-size: 14px;
 }
 
+#footer .footer-socialmedia {
+  padding: 20px 0;
+  background: #282c31;
+}
+
+#footer .footer-socialmedia h4 {
+  font-size: 24px;
+  margin: 0 0 10px 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: 600;
+}
+
 #footer .footer-newsletter {
   padding: 50px 0;
-  background: #2e3339;
+  background: #282c31;
 }
 
 #footer .footer-newsletter h4 {
