@@ -653,7 +653,6 @@ section {
   background: url("../img/team.png") center center no-repeat;
   background-size: cover;
   min-height: 500px;
-  border-radius: 10px;
 }
 
 .about .play-btn {
