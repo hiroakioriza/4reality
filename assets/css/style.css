@@ -45,7 +45,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-
 #preloader .loading {
   display: block;
   /* border: 6px solid #428bca;
@@ -393,8 +392,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero .carousel-item::before {
-  content: '';
   background-color: rgba(12, 13, 14, 0.8);
+  background-image: url("/assets/img/slide/Team-nobg.png");
+  content: '';
+}
+
+@media only screen and (min-width: 500px) {
+  #hero .carousel-item::before{
+    background-image: url("/assets/img/slide/team.png");
+  }
 }
 
 #hero .carousel-container {
