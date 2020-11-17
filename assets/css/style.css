@@ -52,11 +52,15 @@ h1, h2, h3, h4, h5, h6 {
   border-top-color: #fff;
   border-bottom-color: #fff;
   border-radius: 50%; */ 
-  -webkit-animation: animate-preloader 1s linear infinite;
-  animation: animate-preloader 1s linear infinite; 
+  /* -webkit-animation: animate-preloader 1s linear infinite;
+  animation: animate-preloader 1s linear infinite;  */
+  animation: bounce 1s; 
+  animation-direction: alternate; 
+  animation-timing-function: cubic-bezier(.5, 0.05, 1, .5); 
+  animation-iteration-count: infinite; 
 }
 
-@-webkit-keyframes animate-preloader {
+/* @-webkit-keyframes animate-preloader {
   0% {
     transform: rotate(0deg);
   }
@@ -72,7 +76,7 @@ h1, h2, h3, h4, h5, h6 {
   100% {
     transform: rotate(360deg);
   }
-}
+} */
 
 /*--------------------------------------------------------------
 # Back to top button
